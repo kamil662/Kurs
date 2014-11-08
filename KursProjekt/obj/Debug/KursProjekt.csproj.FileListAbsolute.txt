@@ -1,0 +1,6 @@
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\bin\Debug\KursProjekt.exe.config
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\obj\Debug\KursProjekt.exe
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\obj\Debug\KursProjekt.pdb
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\obj\Debug\KursProjekt.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\bin\Debug\KursProjekt.exe
+C:\Users\Kamil\documents\visual studio 2012\Projects\KursProjekt\KursProjekt\bin\Debug\KursProjekt.pdb
