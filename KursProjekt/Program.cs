@@ -117,8 +117,8 @@ namespace KursProjekt
             //IenumerableExample();
             //IEnumerableExampleWithYield();
             //IEnumerableT_ExampleWithYield();
-            //IComparableExamples();
-            IComparableT_Examples();
+            IComparableExamples();
+            //IComparableT_Examples();
 
 
         }
