@@ -63,8 +63,6 @@ namespace KursProjekt
             myAutos[2] = new Car("Viper", 40, 34);
             myAutos[3] = new Car("Mel", 40, 4);
             myAutos[4] = new Car("Chucky", 40, 5);
-            myAutos[5] = new Car("Chucky", 40, 5);
-            myAutos[6] = new Car("Chucky", 40, 5);
 
             // Display current array.
             Console.WriteLine("Here is the unordered set of cars:");
@@ -103,26 +101,50 @@ namespace KursProjekt
                 TabCube.Add(new Cuboid(tmp, i + tmp, i * tmp));
             }
             Console.WriteLine("Before sorting:" + Environment.NewLine);
-            TabCube.ToString();
+
+            foreach (Cuboid item in TabCube)
+            {
+                Console.WriteLine( item.ToString());
+            }
             //TabCube.Sort
             comparerLength CubeComparerLenth = new comparerLength();
             TabCube.Sort(CubeComparerLenth);
 
-
+            Console.WriteLine(Environment.NewLine+"After sorting:" + Environment.NewLine);
+            foreach (Cuboid item in TabCube)
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
 
+        static void staticIEnumerableT_Example()
+        {
+            var tmp = 1.To(20);
+            foreach (var item in tmp)
+            {
+                Console.WriteLine(item);
+            }
+        }
 
         public static void Main()
         {
             //IenumerableExample();
             //IEnumerableExampleWithYield();
             //IEnumerableT_ExampleWithYield();
-            IComparableExamples();
-            //IComparableT_Examples();
+            //IComparableExamples();
+            IComparableT_Examples();
 
-
+            
         }
-
         
+    }
+
+    static class Extension
+    {
+        public static IEnumerable<int> To(this int value, int maxValue)
+        {
+            for (int i = value; i <= maxValue; i++)
+                yield return i;
+        }
     }
 }

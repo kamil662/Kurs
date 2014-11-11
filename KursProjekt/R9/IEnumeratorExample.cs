@@ -14,6 +14,7 @@ using System.Threading.Tasks;
  * 
  * dla iterowania tablicy obiektów Person
  * 
+ * inny przykład: http://www.codeproject.com/Articles/474678/A-Beginners-Tutorial-on-Implementing-IEnumerable-I
  * */
 namespace KursProjekt.R9
 {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 
 /***
- * Implementacja IComparable polega za zdefiniowaniu metody "int CompareTo(object obj)" - w niej porównywane są 2 obiekty 
+ * Implementacja IComparable polega na zdefiniowaniu metody "int CompareTo(object obj)" - w niej porównywane są 2 obiekty 
  * i zwraca 1, -1, bądź 0 dla równych. Dla wbudowanych obiektów można wykorzystać ich własną metodę CompareTo() (w przykładzie string).
  * 
  * Dla możliwości porównania obiektu pod różnymi względami (różne zmienne), 

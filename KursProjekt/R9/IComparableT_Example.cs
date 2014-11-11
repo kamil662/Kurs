@@ -11,7 +11,7 @@ namespace KursProjekt.R9
      * 
      * Parametr dla metody ComapreTo musi być zgodny z typem określonym w interfejsie IComparable<T>
      */
-    class Cuboid : System.IComparable<Cuboid>
+    public class Cuboid : System.IComparable<Cuboid>
     {
         private int height;
         public int Height
