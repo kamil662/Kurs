@@ -26,7 +26,6 @@ namespace KursProjekt.R9.InterfejsNiestandardowy
     #endregion
 
 
-
     class CustomInterface
     {
         public void WorkMethod()

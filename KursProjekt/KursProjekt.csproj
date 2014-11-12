@@ -49,13 +49,15 @@
     <Compile Include="R9\IEnumeratorExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="R9\InterfejsNiestandardowy\CustomInterface.cs" />
-    <Compile Include="R9\InterfejsNiestandardowy\Example.cs" />
+    <Compile Include="R9\InterfejsNiestandardowy\ExampleINiestandardowy.cs" />
+    <Compile Include="R9\InterfejsNiestandardowy\InterfaceHierarchy.cs" />
+    <Compile Include="R9\InterfejsNiestandardowy\InterfejsExplicitlyImplements.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="R9\InterfejsNET\" />
+    <Folder Include="R9\InterfejsWbudawanyNET\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
