@@ -8,6 +8,8 @@ using System.Threading.Tasks;
  * Gdy klasa implementuje kilka interfejsów, zawsze istnieje możliwość że będą zawierać identyczne składowe;
  * Aby rozwiązać konflikt nazw (występujący w takiej sytuacji) należy zastosować jawną implementacje: Explicitly;
  * 
+ * Jawną implementację Imterfejsów można też wykorzystać do celowego "ukrycia" metod czy innych składwych;
+ * 
  * W takim wypadku składowe te stają się automatycznie prywatne (tu metoda Draw() ); 
  * Aby jednak dostać się do składowych należy obiekt rzutować na Imterfejs;
  */

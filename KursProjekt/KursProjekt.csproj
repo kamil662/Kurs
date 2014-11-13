@@ -44,21 +44,23 @@
     <Compile Include="Program.cs" />
     <Compile Include="R9\IComparableComparerExamples.cs" />
     <Compile Include="R9\IComparableT_Example.cs" />
-    <Compile Include="R9\IEnumerableExampleWithYied.cs" />
+    <Compile Include="R9\InterfejsWbudawanyNET\ICloneableCustom.cs" />
+    <Compile Include="R9\InterfejsWbudawanyNET\IComparableCustom.cs" />
+    <Compile Include="R9\InterfejsWbudawanyNET\IEnumerableWithYied.cs" />
     <Compile Include="R9\IEnumerableT_ExampleWithYield.cs" />
-    <Compile Include="R9\IEnumeratorExample.cs" />
+    <Compile Include="R9\InterfejsWbudawanyNET\IEnumeratorCustom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="R9\InterfejsNiestandardowy\CustomInterface.cs" />
     <Compile Include="R9\InterfejsNiestandardowy\ExampleINiestandardowy.cs" />
     <Compile Include="R9\InterfejsNiestandardowy\InterfaceHierarchy.cs" />
     <Compile Include="R9\InterfejsNiestandardowy\InterfejsExplicitlyImplements.cs" />
+    <Compile Include="R9\ExampleIWbudowany.cs" />
+    <Compile Include="R9\InterfejsWbudawanyNET\IEnumerableCustom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="R9\InterfejsWbudawanyNET\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

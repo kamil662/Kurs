@@ -35,7 +35,7 @@ namespace KursProjekt.R9.InterfejsNiestandardowy
 
     #region Interfejs Hierarchy
 
-    interface IDrawable
+    public interface IDrawable
     {
         void Draw();
     }

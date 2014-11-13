@@ -1,4 +1,5 @@
 ﻿using KursProjekt.R9;
+using KursProjekt.R9.InterfejsWbudawanyNET;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,35 +11,7 @@ namespace KursProjekt
 {
     class Program
     {
-        //przykład wykorzystujący Ienumerator z MoceNext,Reset,Current
-        static void IenumerableExample()
-        {
-            Person[] peopleArray = new Person[3]
-            {
-                new Person("John", "Smith"),
-                new Person("Jim", "Johnson"),
-                new Person("Sue", "Rabon"),
-            };
-
-            People peopleList = new People(peopleArray);
-            foreach (Person p in peopleList)
-                Console.WriteLine(p.firstName + " " + p.lastName);
-        }
-        //przykład wykorzystujący Ienumerator z yield
-        static void IEnumerableExampleWithYield()
-        {
-            Garage garaz = new Garage();
-
-            //garaz.Add(new Car("name1", 40, 5));
-            //garaz.Add(new Car("name2", 40, 10));
-            //garaz.Add(new Car("name3", 40, 15));
-            //garaz.Add(new Car("name4", 40, 20));
-
-            foreach (Car car in garaz)
-            {
-                Console.WriteLine(car.ToString());
-            }
-        }
+        
         private static void IEnumerableT_ExampleWithYield()
         {
             MyList<string> myListOfStrings = new MyList<string>();
@@ -53,7 +26,7 @@ namespace KursProjekt
                 Console.WriteLine(s);
             }
         }
-        static void IComparableExamples()
+        /*static void IComparableExamples()
         {
             Console.WriteLine("***** Fun with Object Sorting *****\n");
             // Make an array of Car types.
@@ -88,7 +61,7 @@ namespace KursProjekt
                 Console.WriteLine("{0} {1}", c.CarID, c.PetName);
 
             Console.ReadLine();
-        }
+        }*/
 
         static void IComparableT_Examples()
         {
@@ -128,12 +101,13 @@ namespace KursProjekt
 
         public static void Main()
         {
-            //IenumerableExample();
-            //IEnumerableExampleWithYield();
             //IEnumerableT_ExampleWithYield();
             //IComparableExamples();
-            IComparableT_Examples();
+            //IComparableT_Examples();
 
+
+            IComparableCustom k1 = new IComparableCustom();
+            k1.WorkMethod();
             
         }
         
