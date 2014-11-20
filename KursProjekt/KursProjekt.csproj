@@ -42,20 +42,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="R9\IComparableComparerExamples.cs" />
-    <Compile Include="R9\IComparableT_Example.cs" />
-    <Compile Include="R9\InterfejsWbudawanyNET\ICloneableCustom.cs" />
-    <Compile Include="R9\InterfejsWbudawanyNET\IComparableCustom.cs" />
-    <Compile Include="R9\InterfejsWbudawanyNET\IEnumerableWithYied.cs" />
-    <Compile Include="R9\IEnumerableT_ExampleWithYield.cs" />
-    <Compile Include="R9\InterfejsWbudawanyNET\IEnumeratorCustom.cs" />
+    <Compile Include="R10\ExampleGenericInterface.cs" />
+    <Compile Include="R10\GenericClass\GenericClass.cs" />
+    <Compile Include="R10\GenericClass\Tree.cs" />
+    <Compile Include="R10\GenericClass\TreeEnumerator.cs" />
+    <Compile Include="R10\GenericCollectionsClass.cs" />
+    <Compile Include="R10\GenericInterface\GenericInterface.cs" />
+    <Compile Include="R10\GenericInterface\GenericInterface2.cs" />
+    <Compile Include="R10\GenericInterface\Informer.cs" />
+    <Compile Include="R10\IComparableCustom_T.cs" />
+    <Compile Include="R09\InterfejsWbudawanyNET\ICloneableCustom.cs" />
+    <Compile Include="R09\InterfejsWbudawanyNET\IComparableCustom.cs" />
+    <Compile Include="R09\InterfejsWbudawanyNET\IEnumerableWithYied.cs" />
+    <Compile Include="R10\IEnumerableT_ExampleWithYield.cs" />
+    <Compile Include="R09\InterfejsWbudawanyNET\IEnumeratorCustom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="R9\InterfejsNiestandardowy\CustomInterface.cs" />
-    <Compile Include="R9\InterfejsNiestandardowy\ExampleINiestandardowy.cs" />
-    <Compile Include="R9\InterfejsNiestandardowy\InterfaceHierarchy.cs" />
-    <Compile Include="R9\InterfejsNiestandardowy\InterfejsExplicitlyImplements.cs" />
-    <Compile Include="R9\ExampleIWbudowany.cs" />
-    <Compile Include="R9\InterfejsWbudawanyNET\IEnumerableCustom.cs" />
+    <Compile Include="R09\InterfejsNiestandardowy\CustomInterface.cs" />
+    <Compile Include="R09\InterfejsNiestandardowy\InterfaceHierarchy.cs" />
+    <Compile Include="R09\InterfejsNiestandardowy\InterfejsExplicitlyImplements.cs" />
+    <Compile Include="R09\ExampleInterface.cs" />
+    <Compile Include="R09\InterfejsWbudawanyNET\IEnumerableCustom.cs" />
+    <Compile Include="R11\Delegate\CarDelegate.cs" />
+    <Compile Include="R11\Delegate\GenericDelegate.cs" />
+    <Compile Include="R11\ExampleDelegateEventLambda.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

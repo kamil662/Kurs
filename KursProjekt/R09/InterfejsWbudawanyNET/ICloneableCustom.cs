@@ -33,6 +33,11 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
                 Console.WriteLine("Drugi trojkat: \n" + kopiaTrojkat.ToString());
                 Console.WriteLine("Pierwszy trojkat: \n" + trojkat.ToString());
             }
+
+            Point3D pkt3D = new Point3D();
+            var tmp = pkt3D.Klonuj();
+            pkt3D.Z = 1000;
+            Console.WriteLine("Kwadrat:"+Environment.NewLine+ tmp.ToString());
         }
     }
 
@@ -84,12 +89,6 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
         }
         public Point() { }
 
-        // Override Object.ToString().
-        public override string ToString()
-        {
-            return string.Format("X = {0}; Y = {1};\n", X, Y);
-        }
-
         // Return a copy of the current object.
         // Now we need to adjust for the PointDescription member.
         public object Clone()
@@ -104,6 +103,17 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
             return newPoint;
         }
 
+        // Override Object.ToString().
+        public override string ToString()
+        {
+            return string.Format("X = {0}; Y = {1};\n", X, Y);
+        }
+
+        // Metoda do "wymyślnej" konstrukcji Pkt3D
+        public virtual object Klonuj()
+        {
+            return this.Clone();
+        }
     }
 
     // Klasa opisująca punkt - ważne że to obiekt referencyjny
@@ -116,6 +126,37 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
         {
             PetName = "No-name";
             PointID = Guid.NewGuid();
+        }
+    }
+
+    #endregion
+
+    #region Wymyślna konstrukcja z dziedziczeniem
+
+    // Dziedziczy po klasie implementującej IClonable
+    // Własna metoda do klonowania (w bazowej kasie dopisana metoda virtualna)
+    public class Point3D : Point
+    {
+        public int Z { get; set; }
+
+        public Point3D()
+            : base()
+        {
+            this.Z = 50;
+        }
+
+        // wykorzystywana metoda Clone() z klasy bazowej
+        public override object Klonuj()
+        {
+            Point point2D = (Point)base.Clone();
+            Point3D pkt3D = (Point3D)point2D;
+            pkt3D.Z = this.Z;
+            return pkt3D;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("X = {0}; Y = {1}; Z = {2};\n", X, Y, Z);
         }
     }
 

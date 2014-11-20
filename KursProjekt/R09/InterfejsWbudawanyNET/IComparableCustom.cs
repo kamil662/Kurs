@@ -216,6 +216,7 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
     //Sortowanie pod względem wartości CurrentSpeed
     public class ComparerClass : IComparer
     {
+        // Metoda niegenerycznego interfejsu IComparer - argumenty typu OBJECT
         public int Compare(object x, object y)
         {
             MyNewCar t1 = x as MyNewCar;

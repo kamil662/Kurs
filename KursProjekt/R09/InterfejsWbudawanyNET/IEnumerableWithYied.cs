@@ -95,7 +95,7 @@ namespace KursProjekt.R9.InterfejsWbudawanyNET
         }
 
         //tzw. Metoda Iteracyjna
-        public IEnumerable GetTheCars(bool ReturnRevesed)
+        public IEnumerable GetTheCars(bool ReturnRevesed) // <- rozbudowanie metody wyżej 
         {
             // Zwraca obiekty w odwrotnej kolejności
             if (ReturnRevesed)
